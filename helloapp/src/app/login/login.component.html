@@ -1,0 +1,40 @@
+<div class="container center" style="width: 500px">
+  <div class="col-xs-12 col-sm-12 border center" style="width: 450px">
+  <div class="card center" style="width: 400px">
+    <h2 class="text-center">Login / SignUp</h2>
+      <img class = "card-img-top center" src = "assets/login.png">
+        <div class = "card-body center">
+          <form class="border">
+
+            <div class="form-group col-xs-12 col-sm-12 f-grp-margin">
+                <div class="col-xs-3 col-sm-3 ">
+                  <label>Username:</label>
+                </div>
+                <div class="col-xs-9 col-sm-9">
+                  <input id = "uname" type="text" class="form-control">
+                </div>
+              </div>
+
+            <div class="form-group col-xs-12 col-sm-12">
+              <div class="col-xs-3 col-sm-3">
+                <label>Password:</label>
+              </div>
+              <div class="col-xs-9 col-sm-9">
+                <input id="pw" type = "password" class="col-xs-6 col-sm-6 form-control">
+              </div>
+            </div>
+
+            <div class="form-group col-xs-12 col-sm-12 ">
+              <div class="col-xs-12 col-sm-12">
+                  <button type="button" class="btn btn-primary btn-md" (click)="logincheck()">Login</button>
+              </div>
+              <div class="col-xs-12 col-sm-12">
+                  <button type="button" class="btn btn-primary btn-md" [routerLink]="['/signup']">Sign Up</button>
+                </div>
+              
+            </div>
+          </form>
+        </div>
+  </div>
+</div>
+</div>

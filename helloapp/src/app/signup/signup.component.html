@@ -1,0 +1,67 @@
+<h1>Welcome</h1>
+
+<div class="container">
+
+  <form class="form-horizontal">
+
+    <div class="form-group col-xs-12">
+        <div class="col-xs-12 col-sm-6 ">
+                <label class="col-xs-3">Name: </label>
+                <div class="col-xs-9">
+                    <input id= "uname" name="uname" class="form-control" type="text" [(ngModel)]="username">
+                </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+            <label class="col-xs-3">Blood Group: </label>
+            <div class="col-xs-9">
+                <input id= "bloodgrp" class="form-control" name="bloodgroup" type="text" [(ngModel)]="bloodgroup">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group col-xs-12">
+        <div class="col-xs-12 col-sm-6">
+            <label class="col-xs-3">Role: </label>
+            <div class="col-xs-9">
+                <input id= "role" class="form-control" type="text" name= "role" [(ngModel)]="role">
+            </div>
+        </div>
+
+        <div class=" col-xs-12 col-sm-6">
+            <label class="col-xs-3">Phone: </label>
+            <div class="col-xs-9">
+                <input id= "phone" class="form-control" type="text" name="phone" [(ngModel)]="phone">
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group col-xs-12">
+        <div class="col-xs-12 col-sm-6">
+            <label class="col-xs-3">Age: </label>
+            <div class="col-xs-9">  
+                <input id= "age" class="form-control" type="text" name="age" [(ngModel)]="age">
+            </div>   
+        </div>
+        <div class="col-xs-12 col-sm-6">
+                <label class="col-xs-3">Password: </label>
+                <div class="col-xs-9">  
+                    <input id= "password" class="form-control" type="password" name="password" [(ngModel)]="password">
+                </div>   
+        </div>
+    </div>
+
+    <div class="form-group col-xs-12">
+        <div class="col-xs-12 col-sm-6">
+                <label for="Hobbies" class="col-xs-4">Hobbies :</label>
+                <div class="col-xs-10">
+                <textarea class="form-control" id="hobbies" placeholder="Hobbies" name="hobbies" [(ngModel)]="hobbies"></textarea>
+                </div>
+                <div class="col-xs-2">
+                <button type="button" class="btn btn-primary btn-sm" (click)="store()">Submit</button>
+                </div>
+        </div>
+    </div>
+
+</form>
+</div>
